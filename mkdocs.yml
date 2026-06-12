@@ -1,0 +1,84 @@
+site_name: Cognitive Science Notes — 认知科学笔记
+site_url: https://jeffliulab.github.io/cog-sci-notes/
+repo_url: https://github.com/jeffliulab/cog-sci-notes
+repo_name: jeffliulab/cog-sci-notes
+
+theme:
+  name: material
+  language: zh
+  palette:
+    - scheme: default
+      primary: deep purple
+      accent: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - scheme: slate
+      primary: deep purple
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+plugins:
+  - search
+  - i18n:
+      docs_structure: suffix
+      languages:
+        - locale: zh
+          default: true
+          name: 中文
+          build: true
+        - locale: en
+          name: English
+          build: true
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+  - toc:
+      permalink: true
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - 首页: index.md
+  - 认知科学基础:
+    - 00_Foundations/index.md
+    - 总览: 00_Foundations/Overview.md
+  - 感知与注意:
+    - 01_Perception/index.md
+    - 总览: 01_Perception/Overview.md
+  - 记忆与学习:
+    - 02_Memory_Learning/index.md
+    - 总览: 02_Memory_Learning/Overview.md
+  - 语言与符号:
+    - 03_Language_Symbols/index.md
+    - 总览: 03_Language_Symbols/Overview.md
+  - 推理与决策:
+    - 04_Reasoning_Decision/index.md
+    - 总览: 04_Reasoning_Decision/Overview.md
+  - 概念与范畴:
+    - 05_Concepts_Categories/index.md
+    - 总览: 05_Concepts_Categories/Overview.md
+  - 意识与自我:
+    - 06_Consciousness/index.md
+    - 总览: 06_Consciousness/Overview.md
+  - 认知的计算模型:
+    - 07_Computational_Models/index.md
+    - 总览: 07_Computational_Models/Overview.md

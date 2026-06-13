@@ -60,6 +60,7 @@ nav:
   - 首页: index.md
   - 认知科学基础:
     - 00_Foundations/index.md
+    - Marr 三层次分析: 00_Foundations/Marr_Levels.md
     - 总览: 00_Foundations/Overview.md
   - 感知与注意:
     - 01_Perception/index.md
